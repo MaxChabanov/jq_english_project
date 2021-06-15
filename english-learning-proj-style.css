@@ -1,0 +1,194 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+/* Start screen */
+
+/* Start-button */
+.start-screen {
+    height: 100vh;
+}
+
+.btn-start-container {
+    height: 100%;
+    width: 76%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-start-btn {
+    margin-bottom: 2rem;
+    border: 6px solid #0fe0f5;
+    border-radius: 10%;
+    outline: none;
+    padding: 2rem;
+    background-color: hsl(185, 92%, 51%);
+    color: black;
+    cursor: pointer;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 20px;
+    transition: .2s linear;
+}
+
+.test-start-btn:hover {
+    background-color: hsl(185deg 92% 47%);
+}
+
+.test-start-btn:active {
+    background-color: hsl(185deg 92% 43%);
+}
+
+/* Settings */
+
+.settigs-container {
+   position: absolute;
+   display: inline-flex;
+   justify-content: flex-end;
+   align-items: flex-start;
+   top: 1rem;
+}
+
+/* difficulty */
+.container-difs {
+    display: inline;
+}
+
+.dif-btn {
+    margin-left: 1rem;
+}
+
+#dif-btn-easy {
+    margin-left: 0;
+}
+
+/* word count */
+.container {
+    margin-top: 3rem;
+}
+
+.word-count-btn {
+    margin-left: 1rem;
+}
+
+#word-count-btn-10 {
+    margin: 0;
+}
+
+/* translate-lang */
+.translate-lang-container {
+    margin-top: 3rem;
+}
+
+#english-russian {
+    display: block;
+}
+
+/* lesson-in-progress */
+/* current word */
+
+.lesson-in-progress-container {
+    height: 100%;
+    display: none;
+}
+
+.current-word-container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+}
+
+.current-word-container {
+    display: grid;
+    text-align: center;
+}
+
+/* help */
+.help-img {
+    width: 300px;
+    height: 300px;
+}
+
+.help-img-container {
+    display: none;
+}
+
+.help-container {
+    position: absolute;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    top: 50%;
+    margin-left: 1rem;
+}
+
+/* statistics */
+.statistics-form-container {
+    position: absolute;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    top: 10%;
+    left: 70%;
+}
+
+.statistics-container {
+    display: block;
+}
+
+.statistic-text {
+    display: inline;
+}
+
+.statistics-value {
+    display: inline;
+}
+
+.current-statistics-container-form {
+    position: absolute;
+    height: 90%;
+    right: 2%;
+    top: 2%;
+    border: 4px solid black;
+    padding: 20px;
+}
+
+.current-statistics-container {
+    display: none;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+}
+/* test finished */
+.test-finished {
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+
+.test-results-container {
+    display: inline-flex;
+}
+
+.test-results-container h2{
+    margin-left: 1rem;
+}
+
+.test-end-btn {
+    margin-bottom: 2rem;
+    border: 6px solid #0fe0f5;
+    border-radius: 10%;
+    outline: none;
+    padding: 2rem;
+    background-color: hsl(185, 92%, 51%);
+    color: black;
+    cursor: pointer;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 20px;
+    transition: .2s linear;
+}

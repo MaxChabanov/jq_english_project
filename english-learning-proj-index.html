@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning English is fun... right?</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+
+    <!-- css -->
+    <link rel="stylesheet" href="english-learning-proj-style.css">
+</head>
+<body>
+    <div class="start-screen">
+        <div class="btn-start-container">
+            <button class="test-start-btn">Начать тест!</button>
+        </div>
+
+        <div class="settigs-container">
+            <div class="settigs-container-grid">
+
+                <div class="dif-container">
+                    <h2 class="dif-level-text">
+                        Уровень сложности
+                    </h2>
+                    
+                    <div class="container-difs container">
+                        <button class="dif-btn" id="dif-btn-easy">Легкий</button>
+                        <button class="dif-btn" id="dif-btn-middle">Средний</button>
+                        <button class="dif-btn" id="dif-btn-hard">Сложный</button>
+                    </div>
+                </div>
+
+                <div class="word-count-container container">
+
+                    <h2 class="word-count-text">
+                        Количество слов
+                    </h2>
+
+                    <button class="word-count-btn" id="word-count-btn-10">10</button>
+                    <button class="word-count-btn" id="word-count-btn-20">20</button>
+                    <button class="word-count-btn" id="word-count-btn-30">30</button>
+                </div>
+
+                <div class="translate-lang-container container">
+
+                    <h2 class="translate-lang-text">
+                        Язык перевода
+                    </h2>
+
+                    <div class="inputs">
+                        <input type="radio" name="translate-lang-radio" id="russian-english">с русского на английский
+                        <input type="radio" name="translate-lang-radio" id="english-russian"><p>с английского на русский</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="lesson-in-progress-container">
+        <div class="current-word-container-form">
+            <div class="current-word-container">
+                <h1 class="current-word">
+                   Произошла ошибка (╯︿╰) (Либо еще нет такой сложности или слов)
+                </h1>
+
+                <input type="text" id="wordInput">
+
+                <button style="margin-top: .5rem" id="submit-answer">Принять результат</button>
+            </div>
+        </div>
+
+        <div class="help-container">
+            <div class="help-img-container">
+                <img class="help-img" alt="ummm I'm sorry the picture didn't load">
+            </div>
+            <button id="open-help-btn">Открыть подсказку</button>
+        </div>
+
+        <div class="statistics-form-container">
+            <div class="statistics-container">
+                <p class="statistic-text">Осталось: <p class="statistics-value" id="left-text">0</p></p>
+                <p class="statistic-text">Правильно: <p class="statistics-value" id="right-text">0</p></p>
+                <p class="statistic-text">Ошибок: <p class="statistics-value" id="mistake-text">0</p></p>
+            </div>
+        </div>
+        <div class="current-statistics-container-form">
+            <div class="arrow-container">
+                <img class="arrow" src="img/arrow.png" alt="arrow">
+            </div>
+
+            <div class="current-statistics-container">
+                <div class="dif-container">
+                    <h2 class="dif-level-text ">
+                        Уровень сложности:
+                    </h2>
+                    
+                    <div class="container-difs container">
+                        <p id="current-dif-level">Неизвестно</p>
+                    </div>
+                </div>
+
+                <div class="word-count-container container">
+
+                    <h2 class="word-count-text">
+                        Количество слов
+                    </h2>
+
+                    <p id="current-word-count-text">Неизвестно</p>
+                </div>
+
+                <div class="translate-lang-container container">
+
+                    <h2 class="translate-lang-text">
+                        Язык перевода
+                    </h2>
+
+                    <p id="current-translate-lang">Неизвестно</p>
+                </div>
+
+                <button class="stop-btn">Прервать</button>
+            </div> 
+        </div>
+        </div>
+    </div>
+
+    <div class="test-finished">
+        <h1 style="margin-top: 10rem">Тест <h1 class="test-finished-text"></h1></h1>
+
+        <div class="test-results-container">
+            <h2>Правильно: <h2 id="test-results-right">0</h2></h2>
+        </div>
+        <div class="test-results-container">
+            <h2>Неправильно: <h2 id="test-results-wrong">0</h2></h2>
+        </div>
+
+        <div class="btn-start-container" style="height: 20%">
+            <button class="test-end-btn">Начать новый тест</button>
+        </button>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="english-learning-proj-script.js"></script>
+</body>
+</html>
